@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#post1">Post 1</a></li>
+        <li><a href="#post2">Post 2</a></li>
+        <li><a href="#post3">Post 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="post1" class="post">
+      <h2>My First Blog Post</h2>
+      <p class="date">Published on July 15, 2025</p>
+      <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" alt="Blog Image 1">
+      <p>This is the content of my first blog post. It's all about Frontend development!</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <div class="comment-list" id="comments1"></div>
+        <form onsubmit="addComment(event, 'comments1')">
+          <input type="text" placeholder="Your Name" required>
+          <textarea placeholder="Your Comment" required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="post2" class="post">
+      <h2>JavaScript Tips</h2>
+      <p class="date">Published on July 20, 2025</p>
+      <img src="https://tse2.mm.bing.net/th/id/OIP.6tJFpwVuTqv3RtaqTdoTrQHaEK?pid=Api&P=0&h=180" alt="Blog Image 2">
+      <p>This post shares some handy JavaScript tips for beginners.</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <div class="comment-list" id="comments2"></div>
+        <form onsubmit="addComment(event, 'comments2')">
+          <input type="text" placeholder="Your Name" required>
+          <textarea placeholder="Your Comment" required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="post3" class="post">
+      <h2>Responsive Design</h2>
+      <p class="date">Published on July 24, 2025</p>
+      <img src="https://static.frontendmasters.com/assets/courses/2022-07-25-css-animations/thumb.webp" alt="Blog Image 3">
+      <p>Learn the basics of responsive design using media queries in CSS.</p>
+      <div class="comments">
+        <h3>Comments</h3>
+        <div class="comment-list" id="comments3"></div>
+        <form onsubmit="addComment(event, 'comments3')">
+          <input type="text" placeholder="Your Name" required>
+          <textarea placeholder="Your Comment" required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Blog</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
